@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Game from "./Game";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-bold py-10">
+      <div className=" text-3xl ">
+        <h1>Hello Dev</h1>
+        <h2 className="py-4">
+          Try to make a Tick Tack Toe game
+          <br /> like the one below
+        </h2>
+      </div>
+      <Game />
     </div>
   );
 }
